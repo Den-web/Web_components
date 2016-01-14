@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>Создаём 3D-обложку в Photoshop</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="countdown/jquery.countdown.css" />
+    <link rel="stylesheet" href="nprogress/nprogress.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="http://master-css.com/application/maxsite/templates/master-css/images/favicons/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+<div class="loadsite">Подождите идет загрузка....</div>
+      <div class="main">
+        <header>
+            <div class="header">
+                <div class="mid">
+                    <h1>
+                        <span class="yellow">Создание 3D-обложки в <span class="blue">PHOTOSHOP</span></span>
+                    </h1>
+                    <h2>записывайтесь и обучайтесь бесплатно!</h2>
+                </div>
+            </div>
+        </header>
+        <article>
+            <div class="content out fade">
+                <div class="mid">
+                    <div class="left2">
+                        <img src="images/box3d.png" class="loaded-image" alt="Шаблон 3D-коробки" />
+                    </div>
+                    <div class="right2">
+                        <h3>Укажите свой e-mail</h3>
+                        <h4>что бы подписаться на уроки:</h4>                
+                        <form action="http://shop.master-css.com/subscribe/process/?rid[0]=webdiz2&doneurl=http%3A%2F%2Fmaster-css.com%2Fsub%2Fwebdiz2%2Fok.html&doneurl2=http%3A%2F%2Fmaster-css.com%2Fsub%2Fwebdiz2%2Fnice.php" method="post" target="_blank" id="subscr-form-9563" onsubmit="return jc_chkscrfrm(this, false, false, false, false)">
+                            <input type="email" name="lead_email" required placeholder="Укажите свой e-mail"/>
+                            <input type="hidden" name="lead_name" value="Дорогой друг" />
+                            <input type="submit" value="Присылайте уроки" />
+                        </form>                        
+                        <div class="conf">
+                            Я ненавижу спам, и обещаю Вам, что ваши данные не будут переданы третьим лицам! И вы сможете отказаться от моих писем в любой момент.
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="timer out fade">
+                <div class="mid">
+                    <div class="dline">Набор заканчивается через:</div>
+                    <div class="countdown"></div>
+                    <div id="note"></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </article>
+        <footer>
+            <div class="mid ">
+                <div class="punkt out fade">
+                    <h5>На мастер-классе мы нарисуем эту 3D-обложку:</h5>
+                    <img src="images/box3db.png" class="loaded-image" alt="3D-коробка" />    
+                </div>
+                <div class="copy out fade">
+                   2014 &copy; Тренинг-центр "Master-CSS"
+                </div>
+            </div>
+        </footer>
+      </div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="countdown/jquery.countdown.js"></script>
+<script src="nprogress/nprogress.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script>
+	$(document).ready(function(){
+		NProgress.start();
+		
+	});
+	$(window).load(function(){
+		setTimeout(function(){
+			$('.content').removeClass('out');
+			NProgress.set(0.4);
+		}, 1000);
+	
+		setTimeout(function(){
+			$('.timer').removeClass('out');
+			NProgress.set(0.6);
+		}, 2000);
+	
+		setTimeout(function(){
+			$('.punkt').removeClass('out');
+			NProgress.set(0.8);
+		}, 3000);
+	
+		setTimeout(function(){
+			$('.copy').removeClass('out');
+			$('.loadsite').addClass('dn').remoteClass('loadsite');
+			NProgress.done();
+		}, 4000);	
+	});
+</script>
+</body>
+</html>
