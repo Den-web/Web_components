@@ -1,0 +1,176 @@
+/*
+
+	Author: Nemets Yury;
+	Site: www.sitehere.ru;
+
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,900&subset=latin,cyrillic);
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font:normal 100% 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color:#798289;
+}
+
+* {
+	box-sizing:border-box;
+}
+
+p {
+  margin:0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.content {
+  width: 960px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.content:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#fullpage {
+  
+}
+
+div.section:nth-of-type(1) {
+  padding-top: 60px;
+  background: url(../images/bg.png) #272822;
+}
+
+div.section:nth-of-type(2) {
+  background: url(../images/bg.png) #8577E1;
+}
+
+div.section:nth-of-type(3) {
+  background: url(../images/bg.png) #E15F4B;
+}
+
+div.section:nth-of-type(4) {
+  background: url(../images/bg.png) #32C465;
+}
+
+
+#menu {
+    height: 60px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 70;
+    text-align: right;
+    background: #fff;
+}
+
+#menu li {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    color: #000;
+    display: inline-block;
+    margin: 10px;
+}
+
+#menu li a, #menu li.active a {
+    display: block;
+    padding: 9px 18px;
+    text-decoration: none;
+    color:#ccc;
+}
+
+#menu li.active {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    color: #fff;
+}   
+
+/**/
+#header {
+    height: 100%;
+    min-height: 300px !important;
+    position: relative;
+}
+
+
+#header .wrap {
+    left: 50%;
+    max-width: 800px;
+    padding: 0 15px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#header h1 {
+    color: #fff;
+    font-size: 65px;
+    font-weight: 900;
+    line-height: 95px;
+    padding-top: 50px;
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+#header p {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 36px;
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    text-align: justify;
+}
+
+.scrollicon,.imgNumber {
+  text-align: center;
+}
+
+.imgNumber img {
+  margin-top: 12%;
+}
+
+
+
+/*######Стили для демо###########*/
+
+/*Кнопка "К статье"*/
+.backToSitehereBtn{
+  display: block;
+  width: 150px;
+  height: 150px;
+  background: #01BC78;
+  text-align: center;
+  line-height: 170px;
+  font-size: 20px;
+  border-radius: 50%;
+  color:#fff;
+  position: absolute;
+  text-decoration: none;
+  top: 29px;
+  left:-40px;
+  transform:rotate(-45deg) scale(1);
+  transition:all 0.25s linear;
+}
+
+.backToSitehereBtn:hover {
+  text-decoration: none;
+  top:30px;
+  left:-10px;
+  transform:rotate(-45deg) scale(1.3);
+}
