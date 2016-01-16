@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Красивые поля для ввода с помощью Label_Better.js</title>
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	    <script type="text/javascript" src="js/jquery.label_better.js"></script>
+	    <link rel="stylesheet" type="text/css" href="css/style.css" />
+	    <link rel="stylesheet" type="text/css" href="css/elusive-webfont.css" />
+	</head>
+	<body class="demo4">
+		
+		<div class="header">
+			<h1>jQuery Label Better: Эффект Отскока</h1>
+			<div class="menu">
+				<a href="index.html">Демо 1</a>
+				<a href="index2.html">Демо 2</a>
+				<a href="index3.html">Демо 3</a>
+				<a href="index4.html">Демо 4</a>
+				<a class="active" href="index5.html">Демо 5</a>
+			</div>
+		</div>
+		
+		<div class="main">
+			<div class="page_container">
+				<form class="bl_form">
+					<input type="text" value="Юрий Н."  class="label_better" data-position="left" data-new-placeholder="<i class='customicon-user'></i> Имя" placeholder="Имя" >
+					<input type="email" value="test@sitehere.ru"  class="label_better" data-position="top" data-new-placeholder="<i class='customicon-envelope'></i> Email" placeholder="Email">
+					<input type="password" value="111111"  class="label_better" data-position="bottom" data-new-placeholder="<i class='customicon-lock'></i> Пароль" placeholder="Пароль">
+					<input type="password" value="111111" class="label_better" data-position="right" data-new-placeholder="<i class='customicon-lock'></i> Подтверждение.." placeholder="Подтверждение пароля">
+				</form>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(document).ready( function() {
+				$(".label_better").label_better({
+					easing: "bounce"
+				});
+			});
+		</script>
+		
+	</body>
+</html>

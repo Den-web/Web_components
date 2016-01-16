@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Красивые поля для ввода с помощью Label_Better.js</title>
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	    <script type="text/javascript" src="js/jquery.label_better.js"></script>
+	    <link rel="stylesheet" type="text/css" href="css/style.css" />
+	    <link rel="stylesheet" type="text/css" href="css/elusive-webfont.css" />
+	</head>
+	<body class="demo2">  
+		<div class="header">
+			<h1>jQuery Label Better: Пользовательские Настройки</h1>
+			<div class="menu">
+				<a href="index.html">Демо 1</a>
+				<a class="active" href="index2.html">Демо 2</a>
+				<a href="index3.html">Демо 3</a>
+				<a href="index4.html">Демо 4</a>
+				<a href="index5.html">Демо 5</a>
+			</div>
+		</div>
+		
+		<div class="main">
+			<div class="page_container">
+				<form class="bl_form">
+					<input type="text" class="label_better" data-position="left" placeholder="Имя" >
+					<input type="email" class="label_better" data-position="top" placeholder="Email">
+					<input type="password" class="label_better" data-position="bottom"  placeholder="Пароль">
+					<input type="password" class="label_better" data-position="right" placeholder="Подтверждение пароля">
+				</form>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(document).ready( function() {
+				$(".label_better").label_better();
+			});
+		</script>
+		
+	</body>
+</html>
