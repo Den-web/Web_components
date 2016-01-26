@@ -1,0 +1,235 @@
+/*
+	Author: Nemets Yury;
+	Site: http://www.sitehere.ru;
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,900&subset=latin,cyrillic);
+
+body {
+  font:normal 100% 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url(../images/bg-rr.jpg) #F3F0EB;
+  background-size: cover;
+}
+
+
+.content {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.bulletsBlock:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bulletsBlock > div {
+  width: 30%;
+  float: left;
+  background: rgba(0,0,0,0.3);
+  margin-left:5%;
+  text-align: center;
+  position: relative;
+  padding-bottom: 31.7%;
+  cursor: pointer;
+  -webkit-transition:all 0.35s linear;
+  transition:all 0.35s linear;
+}
+
+.bulletsBlock > div:first-child {
+  margin-left:0;
+}
+
+.bullet-item span{
+  line-height: 1.5em;
+  font-size: 12.5em;
+  color:#fff;
+  position: absolute;
+  top:0;
+  left:0;
+  display: block;
+  width: 100%;
+  -webkit-transition:all 0.35s ease;
+  transition:all 0.35s ease;
+}
+
+.hideText, .titleBullet {
+  position: absolute;
+  left:0;
+  bottom:0;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  -webkit-transition:all 0.35s ease;
+  transition:all 0.35s ease;
+}
+
+.titleBullet {
+  line-height: 2.5em;
+  font-size: 2.1875em;
+  background:#3B3B3B;
+  z-index: 10;
+}
+
+.hideText {
+  line-height: 1.3em;
+  font-size: 1.25em;
+  padding: 1em 0;
+  background:#3B3B3B;
+  font-weight: 300;
+  z-index: 8;
+  height: 50px;
+  -webkit-transition:all 0.35s linear 0.2s;
+  transition:all 0.35s linear 0.2s;
+}
+
+/*Анимация при наведении*/
+.bulletsBlock > div:hover span.iconBullet{
+  line-height: 1.35em;
+  font-size: 10.625em;
+  top:-2.7%;
+}
+
+.bulletsBlock > div:hover {
+  -webkit-box-shadow: 0 35px 35px -35px #000000;
+  -moz-box-shadow: 0 35px 35px -35px #000000;
+  box-shadow: 0 35px 35px -35px #000000;
+}
+
+.bulletsBlock > div:hover p.titleBullet{
+  bottom:80px;
+}
+
+.bulletsBlock > div:hover p.hideText{
+  background:#454545;
+}
+
+/*######Стили для демо###########*/
+h1.title {
+  color:#f8f8f8;
+  font-size: 60px;
+  line-height: 75px;
+  margin:20px auto 0;
+  width: 70%;
+  text-align: center;
+}
+
+h1.title span {
+  display: block;
+  font-size: 40px;
+}
+
+p.info {
+  width: 30%;
+  background: #fff;
+  text-align: center;
+  line-height: 30px;
+  margin:30px auto 50px;
+}
+
+/*Адаптация*/
+@media screen and (max-width: 1140px) {
+	.bullet-item span{
+		line-height: 1.6em;
+		font-size: 9.5em;
+	}
+
+	/*Анимация при наведении*/
+	.bulletsBlock > div:hover span.iconBullet{
+		line-height: 1.5em;
+		font-size: 8em;
+		top:-1%;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.bullet-item span{
+		line-height: 1.5em;
+		font-size: 8em;
+	}
+
+	/*Анимация при наведении*/
+	.bulletsBlock > div:hover span.iconBullet{
+		line-height: 1.2em;
+		font-size: 6em;
+		top:-0.8%;
+	}
+
+	.titleBullet {
+		font-size: 1.8em;
+    	line-height: 2.5em;
+	}
+
+	.hideText {
+	    font-size: 1em;
+	    line-height: 1.3em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.bulletsBlock > div{
+		float:none;
+		margin:0 auto 20px;
+		width: 50%;
+		/*padding-bottom: 55%;*/
+		padding-bottom: 0;
+		min-width: 300px;
+		height: 320px;
+	}
+
+	.bulletsBlock > div:first-child {
+		margin: 0 auto 20px;
+	}
+
+	.bullet-item span{
+		line-height: 1.5em;
+		font-size: 10.5em;
+	}
+
+	/*Анимация при наведении*/
+	.bulletsBlock > div:hover span.iconBullet{
+		line-height: 1.35em;
+		font-size: 8.625em;
+		top:-2.7%;
+	}
+
+	.titleBullet {
+		line-height: 2.5em;
+		font-size: 2.1875em;
+	}
+
+	.hideText {
+		line-height: 1.3em;
+		font-size: 1.25em;
+	}
+
+}
+/*Кнопка "К статье"*/
+.backToSitehereBtn{
+  display: block;
+  width: 150px;
+  height: 150px;
+  background: #01BC78;
+  text-align: center;
+  line-height: 170px;
+  font-size: 20px;
+  border-radius: 50%;
+  color:#fff;
+  position: absolute;
+  text-decoration: none;
+  top:-40px;
+  left:-40px;
+  transform:rotate(-45deg) scale(1);
+  transition:all 0.25s linear;
+}
+
+.backToSitehereBtn:hover {
+  text-decoration: none;
+  top:-10px;
+  left:-10px;
+  transform:rotate(-45deg) scale(1.3);
+}
