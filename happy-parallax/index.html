@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Новогодний параллакс для сайта на JS и CSS3</title>
+        <link rel="stylesheet" href="css/style.css">
+<link media="screen" href="demo/styles/demo.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+
+
+<body>
+<table cellpadding="0" cellspacing="0" id="demo_navi">
+  <tr>
+    <td width="220"><a href="/ " rel="nofollow" ><div class="logo"><b><font color=#c3e425>RUDE</font>BOX</b></div></a></td><td width="45"><div class="demo">DEMO</div></td>
+	<td style="text-overflow: ellipsis;"><a href="/happy-rudebox-parallax-2016" class="go-bottom" rel="nofollow" ><div class="name">Новогодний параллакс для сайта на JS и CSS3</div></a></td>
+  </tr>
+</table>
+	<header>
+		<div class="can"> <canvas id="snowfall"></canvas></div>
+
+	</header>	
+	<style>
+   @font-face {
+    font-family: Nickainley; 
+    src: url(font/Nickainley.ttf); 
+   }
+   h1 {
+    font-family: Nickainley;
+   }
+  </style>
+		<nav>
+			<div id="merrywrap" class="merrywrap">
+			<div class="giftbox"></div></div>
+		</nav>
+	<section>	
+		<h1>C Новым годом , ребятки!</h1>
+		<div id="container" class="container">
+			<ul id="scene" class="scene">
+				<li class="layer" id="im"data-depth="1.00"><img src="img/layer.png"></li>
+				<li class="layer" id="im1" data-depth="1.00"><img src="img/layer.png"></li>
+				<li class="layer" id="im2" data-depth="1.00"><img src="img/layer.png"></li>
+				<li class="layer" id="im3" data-depth="1.00"><img src="img/layer.png"></li>
+				<li class="layer" id="im4" data-depth="1.00"><img src="img/layer.png"></li>
+				<li class="layer" id="im5" data-depth="1.00"><img src="img/layer.png"></li>
+				<li class="layer" id="im6" data-depth="1.00"><img src="img/layer.png"></li>
+			</ul>
+		</div>
+	</section>
+</body>
+        <script src="js/index.js"></script>
+		<SCRIPT LANGUAGE="JavaScript">
+song = new Array(1);
+title = new Array(1);
+song[0] ='music/song.mp3'
+title[0] = ''
+index = Math.floor(Math.random() * song.length);document.write("<DL>\n");
+document.write("<EMBED SRC="+song[index]+" width=300 height=28 autostart=true hidden=true loop=infinite");
+/*width=300 height=28 размиры панели управления*/
+document.write(' TEXT="#FFFFFF">');
+document.write("<font face=arial>");
+document.write(" ");
+document.write("<font face=arial color=red>");
+document.write(title[index]);
+document.write("</font>")
+document.write("</DL>\n");
+</SCRIPT>
+  </body>
+</html>
