@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Work+Sans:400,600,700' rel='stylesheet' type='text/css'>
+<link media="screen" href="demo/styles/demo.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>Быстрое добавление товаров в корзину для сайта</title>
+</head>
+<body>
+<!-- Используется только для демонстрации -->
+<div id="controls">
+<div align=right><a class="close" title="Закрыть" onclick="document.getElementById('controls').style.display='none';">X</a></div>
+   <!-- Яндекс.Директ -->
+<div id="yandex_ad"></div>
+<script type="text/javascript">
+(function(w, d, n, s, t) {
+    w[n] = w[n] || [];
+    w[n].push(function() {
+        Ya.Direct.insertInto(84098, "yandex_ad", {
+            ad_format: "direct",
+            type: "240x400",
+            border_type: "block",
+            border_radius: true,
+            site_bg_color: "FFFFFF",
+            header_bg_color: "FEEAC7",
+            bg_color: "FFF9F0",
+            border_color: "FBE5C0",
+            title_color: "0000CC",
+            url_color: "006600",
+            text_color: "000000",
+            hover_color: "0066FF",
+            favicon: true,
+            no_sitelinks: false
+        });
+    });
+    t = d.getElementsByTagName("script")[0];
+    s = d.createElement("script");
+    s.src = "//an.yandex.ru/system/context.js";
+    s.type = "text/javascript";
+    s.async = true;
+    t.parentNode.insertBefore(s, t);
+})(window, document, "yandex_context_callbacks");
+</script>
+</div>
+<table cellpadding="0" cellspacing="0" id="demo_navi">
+  <tr>
+    <td width="220"><a href="/ " rel="nofollow" ><div class="logo"><b><font color=#c3e425>RUDE</font>BOX</b></div></a></td><td width="45"><div class="demo">DEMO</div></td>
+	<td style="text-overflow: ellipsis;"><a href="/quick-add-to-cart" class="go-bottom" rel="nofollow" ><div class="name">Быстрое добавление товаров в корзину для сайта</div></a></td>
+  </tr>
+</table>
+<!--Конец кода для демонстрации -->
+
+<br><br><br><br><br><br>
+	<a href="#0" class="cd-cart">
+		<span>0</span>
+	</a>
+
+	<ul class="cd-gallery">
+		<li>
+			<div class="cd-single-item">
+				<a href="#0">
+					<ul class="cd-slider-wrapper">
+						<li><img src="img/thumb-1.jpg" alt="Preview image"></li>
+						<li class="selected"><img src="img/thumb-2.jpg" alt="Preview image"></li>
+						<li><img src="img/thumb-3.jpg" alt="Preview image"></li>
+					</ul>
+				</a>
+
+				<div class="cd-customization">
+					<div class="color selected-2" data-type="select">
+						<ul>
+							<li class="color-1">цвет-1</li>
+							<li class="color-2 active">цвет-2</li>
+							<li class="color-3">цвет-3</li>
+						</ul>
+					</div>
+					
+					<div class="size" data-type="select">
+						<ul>
+							<li class="small active">Маленький</li>
+							<li class="medium">Средний</li>
+							<li class="large">Большой</li>
+						</ul>
+					</div>
+
+					<button class="add-to-cart">
+						<em>Добавить в корзину</em>
+						<svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+							<path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+						</svg>
+					</button>
+				</div> <!-- .cd-customization -->
+
+				<button class="cd-customization-trigger">Настройка</button>
+			</div> <!-- .cd-single-item -->
+
+			<div class="cd-item-info">
+				<b><a href="#0">Название продукта</a></b>
+				<em>9.99 грн</em>
+			</div> <!-- cd-item-info -->
+		</li>
+
+		<li>
+			<div class="cd-single-item">
+				<a href="#0">
+					<ul class="cd-slider-wrapper">
+						<li class="selected"><img src="img/thumb-1.jpg" alt="Preview image"></li>
+						<li><img src="img/thumb-2.jpg" alt="Preview image"></li>
+						<li><img src="img/thumb-3.jpg" alt="Preview image"></li>
+					</ul>
+				</a>
+
+				<div class="cd-customization">
+					<div class="color" data-type="select">
+						<ul>
+							<li class="color-1 active">цвет-1</li>
+							<li class="color-2">цвет-2</li>
+							<li class="color-3">цвет-3</li>
+						</ul>
+					</div>
+					
+					<div class="size" data-type="select">
+						<ul>
+							<li class="small active">Маленький</li>
+							<li class="medium">Средний</li>
+							<li class="large">Большой</li>
+						</ul>
+					</div>
+
+					<button class="add-to-cart">
+						<em>Добавить в корзину</em>
+						<svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+							<path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+						</svg>
+					</button>
+				</div> <!-- .cd-customization -->
+
+				<button class="cd-customization-trigger">Настройка</button>
+			</div> <!-- .cd-single-item -->
+
+			<div class="cd-item-info">
+				<b><a href="#0">Название продукта</a></b>
+				<em>9.99 грн</em>
+			</div> <!-- cd-item-info -->
+		</li>
+
+		<li>
+			<div class="cd-single-item">
+				<a href="#0">
+					<ul class="cd-slider-wrapper">
+						<li><img src="img/thumb-1.jpg" alt="Preview image"></li>
+						<li><img src="img/thumb-2.jpg" alt="Preview image"></li>
+						<li class="selected"><img src="img/thumb-3.jpg" alt="Preview image"></li>
+					</ul>
+				</a>
+
+				<div class="cd-customization">
+					<div class="color selected-3" data-type="select">
+						<ul>
+							<li class="color-1">цвет-1</li>
+							<li class="color-2">цвет-2</li>
+							<li class="color-3 active">цвет-3</li>
+						</ul>
+					</div>
+					
+					<div class="size" data-type="select">
+						<ul>
+							<li class="small active">Маленький</li>
+							<li class="medium">Средний</li>
+							<li class="large">Большой</li>
+						</ul>
+					</div>
+
+					<button class="add-to-cart">
+						<em>Добавить в корзину</em>
+						<svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+							<path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+						</svg>
+					</button>
+				</div> <!-- .cd-customization -->
+
+				<button class="cd-customization-trigger">Настройка</button>
+			</div> <!-- .cd-single-item -->
+
+			<div class="cd-item-info">
+				<b><a href="#0">Название продукта</a></b>
+				<em>9.99 грн</em>
+			</div> <!-- cd-item-info -->
+		</li>
+
+		<li>
+			<div class="cd-single-item">
+				<a href="#0">
+					<ul class="cd-slider-wrapper">
+						<li class="selected"><img src="img/thumb-1.jpg" alt="Preview image"></li>
+						<li><img src="img/thumb-2.jpg" alt="Preview image"></li>
+						<li><img src="img/thumb-3.jpg" alt="Preview image"></li>
+					</ul>
+				</a>
+
+				<div class="cd-customization">
+					<div class="color" data-type="select">
+						<ul>
+							<li class="color-1 active">color-1</li>
+							<li class="color-2">color-2</li>
+							<li class="color-3">color-3</li>
+						</ul>
+					</div>
+					
+					<div class="size" data-type="select">
+						<ul>
+							<li class="small active">Маленький</li>
+							<li class="medium">Средний</li>
+							<li class="large">Большой</li>
+						</ul>
+					</div>
+
+					<button class="add-to-cart">
+						<em>Добавить в корзину</em>
+						<svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+							<path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+						</svg>
+					</button>
+				</div> <!-- .cd-customization -->
+
+				<button class="cd-customization-trigger">Customize</button>
+			</div> <!-- .cd-single-item -->
+
+			<div class="cd-item-info">
+				<b><a href="#0">Название продукции</a></b>
+				<em>9.99 грн</em>
+			</div> <!-- cd-item-info -->
+		</li>
+
+		<li>
+			<div class="cd-single-item">
+				<a href="#0">
+					<ul class="cd-slider-wrapper">
+						<li><img src="img/thumb-1.jpg" alt="Preview image"></li>
+						<li class="selected"><img src="img/thumb-2.jpg" alt="Preview image"></li>
+						<li><img src="img/thumb-3.jpg" alt="Preview image"></li>
+					</ul>
+				</a>
+
+				<div class="cd-customization">
+					<div class="color selected-2" data-type="select">
+						<ul>
+							<li class="color-1">color-1</li>
+							<li class="color-2 active">color-2</li>
+							<li class="color-3">color-3</li>
+						</ul>
+					</div>
+					
+					<div class="size" data-type="select">
+						<ul>
+							<li class="small active">Маленький</li>
+							<li class="medium">Средний</li>
+							<li class="large">Большой</li>
+						</ul>
+					</div>
+
+					<button class="add-to-cart">
+						<em>Добавить в корзину</em>
+						<svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+							<path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+						</svg>
+					</button>
+				</div> <!-- .cd-customization -->
+
+				<button class="cd-customization-trigger">Customize</button>
+			</div> <!-- .cd-single-item -->
+
+			<div class="cd-item-info">
+				<b><a href="#0">Название продукции</a></b>
+				<em>9.99 грн</em>
+			</div> <!-- cd-item-info -->
+		</li>
+
+		<li>
+			<div class="cd-single-item">
+				<a href="#0">
+					<ul class="cd-slider-wrapper">
+						<li class="selected"><img src="img/thumb-1.jpg" alt="Preview image"></li>
+						<li><img src="img/thumb-2.jpg" alt="Preview image"></li>
+						<li><img src="img/thumb-3.jpg" alt="Preview image"></li>
+					</ul>
+				</a>
+
+				<div class="cd-customization">
+					<div class="color" data-type="select">
+						<ul>
+							<li class="color-1 active">color-1</li>
+							<li class="color-2">color-2</li>
+							<li class="color-3">color-3</li>
+						</ul>
+					</div>
+					
+					<div class="size" data-type="select">
+						<ul>
+							<li class="small active">Маленький</li>
+							<li class="medium">Средний</li>
+							<li class="large">Большой</li>
+						</ul>
+					</div>
+
+					<button class="add-to-cart">
+						<em>Добавить в корзину</em>
+						<svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+							<path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
+						</svg>
+					</button>
+				</div> <!-- .cd-customization -->
+
+				<button class="cd-customization-trigger">Customize</button>
+			</div> <!-- .cd-single-item -->
+
+			<div class="cd-item-info">
+				<b><a href="#0">Название продукта</a></b>
+				<em>9.99 грн</em>
+			</div> <!-- cd-item-info -->
+		</li>
+	</ul> <!-- cd-gallery -->
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
