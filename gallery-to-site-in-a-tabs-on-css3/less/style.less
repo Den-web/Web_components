@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  
+  &:after {
+    content: "Pen is only for ideas and showoff, i would strongly recommend a javascript solution instead";
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    font-size: 12px;
+    font-style: italic;
+    color: #666;
+    font-weight: 100;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background: #e8e8e8;
+  font-family: 'helvetive neue', sans-serif;
+  font-weight: 700;
+}
+
+.container {
+  width: 600px;
+  position: relative;
+}
+
+.thumbnails {
+  list-style: none;
+  font-size: 0;
+  margin-left: -2%;
+  
+  li {
+    display: inline-block;
+    width: 23%;
+    margin-left: 2%;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  li:hover {
+    .item-hugger {
+      background: white;
+
+      .title {
+         color: #000; 
+      }
+    }
+  }
+  
+  input[name="select"] {
+    display: none;
+  }
+  
+  .item-hugger {
+    position: relative;
+    height: 140px;
+    margin: 20px 0;
+    background: #f2f2f2;
+    transition: all 150ms ease-in-out;
+  }
+  
+  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+  }
+  
+  .title {
+    padding: 20px 0 0;
+    font-size: 18px;
+    color: #555;
+    transition: all 150ms linear;
+  }
+  
+  .thumb-image {
+    height: 100px;
+    padding: 20px 0;
+  }
+  
+  .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 600px;
+    height: 500px;
+    padding: 50px;
+    opacity: 0;
+    transition: all 150ms linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    .title {
+      font-size: 60px;
+      font-weight: 400;
+      display: inline-block;
+      color: #555;
+      border-bottom: 6px solid #fe7701;
+      padding: 50px 10px 0;
+      text-transform: uppercase;
+    }
+  }
+  
+  
+  input[name="select"]:checked + .item-hugger {
+    height: 180px;
+    margin: 0;
+    background: white;
+  }
+  
+  
+  
+  input[name="select"]:checked ~ .content {
+    opacity: 1;
+  }
+  
+  
+}
+
+.white-box {
+  background: white;
+  height: 500px;
+}

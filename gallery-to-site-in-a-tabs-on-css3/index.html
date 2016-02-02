@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Галерея для сайта в виде табов на CSS3 | Демонстрация для сайта RUDEBOX</title>
+<link media="screen" href="demo/styles/demo.css" type="text/css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+  <br><br>
+<!-- Используется только для демонстрации -->
+<div id="controls">
+<div align=right><a class="close" title="Закрыть" onclick="document.getElementById('controls').style.display='none';">X</a></div>
+   <!-- Яндекс.Директ -->
+<div id="yandex_ad"></div>
+<script type="text/javascript">
+(function(w, d, n, s, t) {
+    w[n] = w[n] || [];
+    w[n].push(function() {
+        Ya.Direct.insertInto(84098, "yandex_ad", {
+            ad_format: "direct",
+            type: "240x400",
+            border_type: "block",
+            border_radius: true,
+            site_bg_color: "FFFFFF",
+            header_bg_color: "FEEAC7",
+            bg_color: "FFF9F0",
+            border_color: "FBE5C0",
+            title_color: "0000CC",
+            url_color: "006600",
+            text_color: "000000",
+            hover_color: "0066FF",
+            favicon: true,
+            no_sitelinks: false
+        });
+    });
+    t = d.getElementsByTagName("script")[0];
+    s = d.createElement("script");
+    s.src = "//an.yandex.ru/system/context.js";
+    s.type = "text/javascript";
+    s.async = true;
+    t.parentNode.insertBefore(s, t);
+})(window, document, "yandex_context_callbacks");
+</script>
+</div>
+<table cellpadding="0" cellspacing="0" id="demo_navi">
+  <tr>
+    <td width="220"><a href="/ " rel="nofollow" ><div class="logo"><b><font color=#c3e425>RUDE</font>BOX</b></div></a></td><td width="45"><div class="demo">DEMO</div></td>
+	<td style="text-overflow: ellipsis;"><a href="/gallery-to-site-in-a-tabs-on-css3" class="go-bottom" rel="nofollow" ><div class="name">Галерея для сайта в виде табов на CSS3</div></a></td>
+  </tr>
+</table>
+<!--Конец кода для демонстрации -->
+    <div class="container">
+ 
+  <ul class="thumbnails">
+    
+    <li>
+      
+      <input type="radio" name="select" id="mtb">
+      <div class="item-hugger">
+        <div class="title">MTB</div>
+        <img class="thumb-image" src="img/ultima-team-275-xtr-di2-2x11team-orange-matt-289x165.png" />
+        <label for="mtb"></label>
+      </div>
+      
+      <div class="content">
+        <div class="item-wrapper">
+          <img src="img/ultima-team-275-xtr-di2-2x11team-orange-matt-1024x584.png" />
+          <div class="title">Mtb</div>
+        </div>
+      </div>
+      
+      
+    </li>
+    
+    <li class="is-active">
+      
+      <input type="radio" name="select" id="racer" checked>
+      <div class="item-hugger">
+        <div class="title">Cпортивный</div>
+        <img class="thumb-image" src="img/exa-team-dura-ace-team-orange-matt-276x165.png" />
+        <label for="racer"></label>
+      </div>
+      
+      <div class="content">
+        <div class="item-wrapper">
+          <img src="img/exa-team-dura-ace-team-orange-matt-1024x613.png" />
+          <div class="title">Cпортивный</div>
+        </div>
+      </div>
+      
+    </li>
+    
+    <li>
+      
+      <input type="radio" name="select" id="city">
+      <div class="item-hugger">
+        <div class="title">Городской</div>
+        <img class="thumb-image" src="img/alma-622-dam-1x8svart-270x165.png" />
+        <label for="city"></label>
+      </div>
+      
+      <div class="content">
+        <div class="item-wrapper">
+          <img src="img/alma-622-dam-1x8svart-1024x625.png" />
+          <div class="title">Городской</div>
+        </div>
+      </div>
+    </li>
+    
+    <li>
+      
+      <input type="radio" name="select" id="electric">
+      <div class="item-hugger">
+        <div class="title">Электро</div>
+        <img class="thumb-image" src="img/elir-sram-x9-boschsvart-matt-292x165.png" />
+        <label for="electric"></label>
+      </div>
+
+      <div class="content">
+        <div class="item-wrapper">
+          <img src="img/elir-sram-x9-boschsvart-matt-1000x566.png" />
+          <div class="title">Электро</div>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <div class="white-box"></div>
+</div>
+
+    
+  </body>
+</html>
