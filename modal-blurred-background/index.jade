@@ -1,0 +1,26 @@
+.wrapper
+  .container
+    article 
+      h2 Aenean posuere
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra quis enim a fermentum. Etiam sed interdum tellus, ac gravida ante. Etiam eu mi at erat molestie mattis eu a elit. Cras ac varius mi. Maecenas tempus non urna vitae posuere. Aenean posuere, mi non ullamcorper sollicitudin, sapien elit molestie risus, a maximus felis lectus vel sapien. Vestibulum convallis dolor in magna malesuada ultrices. Sed et ipsum est. Sed laoreet tellus sit amet auctor tempus. Proin et cursus nulla, a vulputate ante. Donec pellentesque rhoncus elementum. Nullam vitae diam elementum, tincidunt elit non, mattis nibh.
+      button.toggleModal modal
+      
+     article 
+      h2 Vestibulum convallis
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra quis enim a fermentum. Etiam sed interdum tellus, ac gravida ante. Etiam eu mi at erat molestie mattis eu a elit. Cras ac varius mi. Maecenas tempus non urna vitae posuere. Aenean posuere, mi non ullamcorper sollicitudin, sapien elit molestie risus, a maximus felis lectus vel sapien. Vestibulum convallis dolor in magna malesuada ultrices. Sed et ipsum est. Sed laoreet tellus sit amet auctor tempus. Proin et cursus nulla, a vulputate ante. Donec pellentesque rhoncus elementum. Nullam vitae diam elementum, tincidunt elit non, mattis nibh.
+      button.toggleModal modal
+ 
+ .modal.is-active
+   .modal__header
+     .inner
+       h2 Donec pellentesque
+   .modal__content
+      .inner
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra quis enim a fermentum. Etiam sed interdum tellus, ac gravida ante.
+   .modal__footer
+     .inner
+        button.toggleModal close
+ 
+ svg(version="1.1", xmlns="http://www.w3.org/2000/svg")
+    filter#blur
+      feGaussianBlur(stdDeviation="3")

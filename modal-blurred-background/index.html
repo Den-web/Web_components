@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Простые модальные окна с размытым фоном на CSS3 | Демонстрация для сайта RUDEBOX</title>
+<link media="screen" href="demo/styles/demo.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+<!-- Используется только для демонстрации -->
+<div id="controls">
+<div align=right><a class="close" title="Закрыть" onclick="document.getElementById('controls').style.display='none';">X</a></div>
+   <!-- Яндекс.Директ -->
+<div id="yandex_ad"></div>
+<script type="text/javascript">
+(function(w, d, n, s, t) {
+    w[n] = w[n] || [];
+    w[n].push(function() {
+        Ya.Direct.insertInto(84098, "yandex_ad", {
+            ad_format: "direct",
+            type: "240x400",
+            border_type: "block",
+            border_radius: true,
+            site_bg_color: "FFFFFF",
+            header_bg_color: "FEEAC7",
+            bg_color: "FFF9F0",
+            border_color: "FBE5C0",
+            title_color: "0000CC",
+            url_color: "006600",
+            text_color: "000000",
+            hover_color: "0066FF",
+            favicon: true,
+            no_sitelinks: false
+        });
+    });
+    t = d.getElementsByTagName("script")[0];
+    s = d.createElement("script");
+    s.src = "//an.yandex.ru/system/context.js";
+    s.type = "text/javascript";
+    s.async = true;
+    t.parentNode.insertBefore(s, t);
+})(window, document, "yandex_context_callbacks");
+</script>
+</div>
+<table cellpadding="0" cellspacing="0" id="demo_navi">
+  <tr>
+    <td width="220"><a href="/ " rel="nofollow" ><div class="logo"><b><font color=#c3e425>RUDE</font>BOX</b></div></a></td><td width="45"><div class="demo">DEMO</div></td>
+	<td style="text-overflow: ellipsis;"><a href="/modal-blurred-background" class="go-bottom" rel="nofollow" ><div class="name">Простые модальные окна с размытым фоном на CSS3</div></a></td>
+  </tr>
+</table>
+<!--Конец кода для демонстрации -->
+<br><br>
+  <style>
+   .leftimg {
+    float:left;
+    margin: 7px 7px 7px 0; 
+   }
+  </style>
+<div class="wrapper">
+  <div class="container">
+    <article> 
+      <h2>Простые модальные окна с размытым фоном на CSS3</h2>
+      <p><img src="images/2.gif" class="leftimg">Вкладки весьма интересная и удобная штука при создании сайта, она позволяет правильно организовать информацию, при этом сэкономив немного места на сайте. В сегодняшнем уроке речь пойдет о совмещении приятного с полезным, а именно об галереи изображений которая реализована в виде вкладок. Если вы хотите создать интернет магазин, то для отображения дополнительной информации о вашем продукте данный прием станет отличным решением. </p>
+      <div align=right><button class="toggleModal">Открыть статью</button></div>
+    </article>
+    <article> 
+      <h2>Галерея для сайта в виде табов с помощью CSS3</h2>
+	  
+      <p><img src="images/1.gif" class="leftimg">В данном уроке мы хотели бы рассказать и показать, как можно создать достаточно простую горизонтальную временную шкалу для сайта, с удобной навигацией и анимированным слайдом при переходе к необходимому контенту. Каждая точка времени на шкале будет кликабельной, пользователь может воспользоваться как ползунком, так и навигацией с помощью точек. При нажатии на точку, будет происходить событие. </p>
+      <div align=right><button class="toggleModal">Открыть статью</button></div>
+    </article>
+  </div>
+</div>
+<div class="modal is-active">
+  <div class="modal__header">
+    <div class="inner">
+      <h2>Заголовок для окна</h2>
+    </div>
+  </div>
+  <div class="modal__content">
+    <div class="inner">
+      <p>Вкладки весьма интересная и удобная штука при создании сайта, она позволяет правильно организовать информацию, при этом сэкономив немного места на сайте. 
+
+
+</p>
+    </div>
+  </div>
+  <div class="modal__footer">
+    <div class="inner">
+      <button class="toggleModal">Закрыть</button>
+    </div>
+  </div>
+</div>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <filter id="blur">
+    <feGaussianBlur stdDeviation="3"></feGaussianBlur>
+  </filter>
+</svg>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src="js/index.js"></script>
+
+  </body>
+</html>
