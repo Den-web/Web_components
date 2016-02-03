@@ -1,0 +1,10 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: "Pontano Sans", Helvetica;
+	background: #000000 url(header.jpg) no-repeat center top;
+}
+
