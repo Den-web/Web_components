@@ -1,0 +1,197 @@
+.side-menu-advanced{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 275px;
+    box-sizing: border-box;
+    background-color:  #222427;
+    box-shadow: 2px 0 5px 0 rgba(29, 30, 31, 0.4);
+    z-index: 10;
+
+
+    color: #ffffff;
+    font: bold 16px Arial, Helvetica, sans-serif;
+
+    -webkit-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
+
+    -webkit-transform: translateX(-350px);
+    transform:translateX(-350px);
+}
+
+.side-menu-advanced.side-menu-shown{
+    -webkit-transform: translateX(0);
+    transform:translateX(0);
+}
+
+/* Scrollable container for the side menu options */
+
+.side-menu-advanced .side-menu-content{
+    overflow: auto;
+    max-height: 100%;
+    padding: 20px 32px 20px;
+}
+
+/* Titles */
+
+.side-menu-advanced .side-menu-section-title {
+    display: block;
+    color: #74839a;
+    font-size: 11px;
+    margin: 0 0 25px;
+}
+
+/* Profile section */
+
+.side-menu-user-profile-section{
+    margin-bottom: 38px;
+    overflow: hidden;
+}
+
+.side-menu-user-profile-section img{
+    display: block;
+    float: left;
+    border-radius: 50%;
+    margin-right: 11px;
+}
+
+.side-menu-user-profile-section a{
+    display: block;
+    margin-top: 8px;
+    text-decoration: none;
+    color: #fefefe;
+    font-size: 14px;
+}
+
+.side-menu-user-profile-section span{
+    color:  #74839a;
+    font-size: 11px;
+}
+
+/* Account limits section */
+
+.side-menu-account-limits-section{
+    margin-bottom: 45px;
+}
+
+.side-menu-account-limits{
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.side-menu-account-limits span{
+    float: right;
+}
+
+.side-menu-progress-bar{
+    height: 4px;
+    background-color: #383c43;
+    margin: 9px 0 17px;
+}
+
+.side-menu-progress-bar span{
+    height: 4px;
+    display: block;
+    background-color:  #39b54a;
+}
+
+.side-menu-button{
+    box-sizing: border-box;
+    display: block;
+    color: inherit;
+    font: inherit;
+    font-size: 13px;
+    text-decoration: none;
+
+    width: 150px;
+    background-color:  #345e7e;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    padding: 10px 22px;
+    margin-top: 28px;
+}
+
+
+/* Actions section */
+
+.side-menu-actions-section{
+    margin-bottom: 120px;
+}
+
+.side-menu-actions-section .side-menu-row{
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.side-menu-actions-section .side-menu-row a{
+    text-decoration: none;
+    color: inherit;
+    max-width: 150px;
+    float: left;
+}
+
+.side-menu-actions-section .side-menu-row i{
+    float: right;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+/* The logo */
+
+.side-menu-advanced .side-menu-logo{
+    display: block;
+
+    color: inherit;
+    text-decoration: none;
+    font: normal 50px 'Cookie', cursive;
+    line-height: 122px;
+    text-align: center;
+    width: 122px;
+    border-radius: 50%;
+    background-color: #151617;
+    margin:0 auto;
+}
+
+
+/* Close button */
+
+.side-menu-advanced .side-menu-close{
+    position: absolute;
+    right: -52px;
+    top: 15px;
+    width: 35px;
+
+    display: none;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    background-color:  #ed145b;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.side-menu-advanced.side-menu-shown .side-menu-close{
+    display: block;
+}
+
+/* Making the side menu adapt to the screen size */
+
+@media (max-width: 400px){
+
+    .side-menu-advanced{
+        width: 260px;
+    }
+
+    .side-menu-advanced .side-menu-close{
+        right: -45px;
+    }
+}
+
+@media (max-height: 840px){
+    .side-menu-advanced .side-menu-logo{
+        display: none;
+    }
+}

@@ -1,0 +1,114 @@
+.options-menu-overlay {
+    font-family: sans-serif;
+    display: none;
+    position: fixed;
+    background-color: rgba(85, 85, 86, 0.9);
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.options-menu-overlay span.close-overlay {
+    cursor: pointer;
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 48px;
+    border-radius: 50%;
+    background-color: rgba(237, 20, 91, 0);
+    width: 48px;
+    height: 48px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.options-menu-overlay ul {
+    list-style: none;
+    margin: 100px auto 0;
+    padding: 0;
+}
+
+.options-menu-overlay ul li {
+    color: #ffffff;
+    font-size: 24px;
+    position: relative;
+    margin: 0 auto 20px;
+    top:20%;
+    text-align: center;
+    font-weight: normal;
+    padding: 8px 0;
+    cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.options-menu-overlay ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.options-menu-overlay ul li a:hover,
+.options-menu-overlay ul li a:active {
+    color: #dad985;
+}
+
+.options-menu-overlay ul li.delete ,
+.options-menu-overlay ul li.delete a{
+    color: #e93e3e;
+    cursor: pointer;
+}
+
+/* Making the option menu responsive */
+
+@media (max-height: 800px) {
+
+    .options-menu-overlay ul li{
+        margin-bottom: 0;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .options-menu-overlay span.close-overlay {
+        right: 20px;
+    }
+}
+
+
+/* The styling of the button. You can replace this with your own. */
+
+.button {
+    font-family: sans-serif;
+    display: block;
+    margin: 0 auto;
+    background-color:  #87bae1;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+    padding: 0 10px;
+    line-height: 2.7;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    width: 185px;
+    height: 35px;
+    cursor: pointer;
+
+    -webkit-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.button i.fa-cog{
+    margin-right: 5px;
+}

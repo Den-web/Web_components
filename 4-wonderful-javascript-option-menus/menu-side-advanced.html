@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Freebie: 4 Wonderful JavaScript Option Menus</title>
+
+    <link rel="stylesheet" href="assets/demo.css">
+    <link rel="stylesheet" href="assets/menu-side-advanced.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Cookie' type='text/css'>
+
+</head>
+
+
+<header>
+    <h1>Freebie: 4 Wonderful JavaScript Option Menus</h1>
+    <a href="http://tutorialzine.com/2015/11/freebie-4-wonderful-javascript-option-menus/">Download</a>
+</header>
+
+<ul class="navigation">
+    <li><a href="index.html">Horizontal</a></li>
+    <li><a href="menu-side-basic.html">Side Basic</a></li>
+    <li><a href="menu-side-advanced.html" class="active">Side Advanced</a></li>
+    <li><a href="menu-overlay.html">Overlay</a></li>
+</ul>
+
+
+
+
+<aside class="side-menu-advanced">
+
+    <div class="side-menu-content">
+
+        <div class="side-menu-user-profile-section">
+            <img src="assets/avatar.jpg" width="45" alt="User profile">
+            <a href="#">Mark Smith Peterson</a>
+            <span>Administrator</span>
+        </div>
+
+
+        <div class="side-menu-account-limits-section">
+
+            <p class="side-menu-section-title"> Account limits</p>
+
+            <p class="side-menu-account-limits">
+                surveys
+                <span>10/15</span>
+            </p>
+
+            <div class="side-menu-progress-bar">
+                <span style="width: 66.6%"></span>
+            </div>
+
+            <p class="side-menu-account-limits">
+                respondents
+                <span>214/1000</span>
+            </p>
+
+            <div class="side-menu-progress-bar">
+                <span style="width: 15.3%"></span>
+            </div>
+
+            <p class="side-menu-account-limits">
+                answers
+                <span>74/150</span>
+            </p>
+
+            <div class="side-menu-progress-bar">
+                <span style="width: 50%"></span>
+            </div>
+
+            <a href="#" class="side-menu-button" data-function="Upgrade">Upgrade to PRO</a>
+
+        </div>
+
+
+        <div class="side-menu-actions-section">
+
+            <p class="side-menu-section-title"> Actions </p>
+
+            <p class="side-menu-row">
+                <a href="#" class="side-menu-option" data-id="1">First option</a>
+                <i class="fa fa-comments"></i>
+            </p>
+
+            <p class="side-menu-row">
+                <a href="#" class="side-menu-option" data-id="2">Second option</a>
+                <i class="fa fa-group"></i>
+            </p>
+
+            <p class="side-menu-row">
+                <a href="#" class="side-menu-option" data-id="3">Third option</a>
+                <i class="fa fa-list"></i>
+            </p>
+
+            <p class="side-menu-row">
+                <a href="#" class="side-menu-option" data-id="4">Fourth option</a>
+                <i class="fa fa-cog"></i>
+            </p>
+
+        </div>
+
+        <a href="#" class="side-menu-logo">Logo</a>
+
+    </div>
+
+    <span class="side-menu-close"><i class="fa fa-close"></i></span>
+
+</aside>
+
+
+<span class="menu-toggle" data-show-dialog="side-menu-advanced">Show Menu</span>
+
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script>
+
+    // Making the side menu work
+
+    $(document).ready(function() {
+
+        $('.menu-toggle').click(function(e){
+
+            var menu = $(this).data('show-dialog');
+
+            $('.' + menu).toggleClass('side-menu-shown');
+
+        });
+
+        $('.side-menu-close').on('click', function () {
+            $('.side-menu-advanced').removeClass('side-menu-shown');
+        });
+
+        $('.side-menu-option').on('click', function (e) {
+            e.preventDefault();
+
+            var option = $(this).data('id');
+
+            alert('You chose option ' + option);
+        });
+
+        $('.side-menu-button').on('click', function (e) {
+            e.preventDefault();
+
+            var buttonFunction = $(this).data('function');
+
+            alert('You clicked the ' + buttonFunction + ' button.');
+        })
+
+    });
+
+</script>
+
+<!-- Only used for the demos. Please ignore and remove. -->
+<script src="http://cdn.tutorialzine.com/misc/enhance/v3.js" async></script>
+
+</body>
+
+</html>

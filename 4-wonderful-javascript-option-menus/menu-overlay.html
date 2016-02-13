@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Freebie: 4 Wonderful JavaScript Option Menus</title>
+
+    <link rel="stylesheet" href="assets/demo.css">
+    <link rel="stylesheet" href="assets/menu-overlay.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+</head>
+
+
+<header>
+    <h1>Freebie: 4 Wonderful JavaScript Option Menus</h1>
+    <a href="http://tutorialzine.com/2015/11/freebie-4-wonderful-javascript-option-menus/">Download</a>
+</header>
+
+<ul class="navigation">
+    <li><a href="index.html">Horizontal</a></li>
+    <li><a href="menu-side-basic.html">Side Basic</a></li>
+    <li><a href="menu-side-advanced.html">Side Advanced</a></li>
+    <li><a href="menu-overlay.html" class="active">Overlay</a></li>
+</ul>
+
+
+
+
+<div class="options-menu-overlay">
+    <ul>
+        <li data-option="one"><a href="#">Option one</a></li>
+        <li data-option="two"><a href="#">Option two</a></li>
+        <li data-option="three"><a href="#">Option three</a></li>
+        <li data-option="four"><a href="#">Option four</a></li>
+        <li class="delete" data-option="delete"><a href="#">Delete option</a></li>
+    </ul>
+    <span class="close-overlay"><i class="fa fa-close"></i></span>
+</div>
+
+
+<span class="menu-toggle" data-show-dialog="options-menu-overlay">Show Menu</span>
+
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script>
+
+    // Here is how to show the horizontal menu
+
+    $(document).ready(function() {
+
+        $('.menu-toggle').click(function(e){
+
+            var menu = $(this).data('show-dialog');
+
+            $('.' + menu).fadeIn(300);
+
+        });
+
+        $('.options-menu-overlay .close-overlay').click(function(e){
+
+            $(this).closest('.options-menu-overlay').fadeOut();
+            e.stopPropagation();
+
+        });
+
+        // Here is how to listen for clicks on the menu items
+
+        $('.options-menu-overlay li a').click(function(e){
+
+            alert('You clicked option ' + $(this).parent().data('option'));
+
+            e.stopPropagation();
+
+            // Tip: If you want to hide the overlay when an option is
+            // clicked option, uncomment the following line
+
+            // $(this).closest('.menu-overlay').fadeOut(300);
+        });
+
+        $(document).on('keydown',function(e){
+
+            // Hide the overlay when ESC is clicked
+
+            if(e.keyCode === 27){
+                $('.options-menu-overlay').fadeOut('fast');
+            }
+        });
+
+    });
+</script>
+
+<!-- Only used for the demos. Please ignore and remove. -->
+<script src="http://cdn.tutorialzine.com/misc/enhance/v3.js" async></script>
+
+</body>
+
+</html>
