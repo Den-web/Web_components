@@ -1,0 +1,118 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<title>test</title>
+
+		<style type="text/css" media="screen">
+		/* CSS Reset */
+			* {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				outline: 0;
+			}
+		
+			body {
+				font-family: Arial, "MS Trebuchet", sans-serif;
+				background-color: #111;
+				color:#888;
+			}
+		
+			a{
+				text-decoration:none;
+				color:#8ac;
+			}
+			
+		/* Setup Tabs */
+			
+			ul{
+				background:#000;
+				width:125px; /* Width of Tab Image */
+				float: left;
+				list-style: none;
+				border-right:8px solid black;
+			}
+			
+			ul li{
+				height:75px; /* Height of Tab Image */
+			}
+			
+		/* Setup Tab so normal opacity is 40 and rollover is 100 */
+			ul li a img{
+				/* for IE */
+				-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+				filter:alpha(opacity=40);
+			  
+				/* CSS3 standard */
+				opacity:0.4;
+			  
+			}
+			ul li a:hover img{
+				  
+				/* for IE */
+				-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+				filter:alpha(opacity=100);
+				
+				/* CSS3 standard */
+				opacity:1.0;
+			}
+
+			
+			#images{
+				width:500px; 
+				height:300px; 
+				overflow:hidden;
+				float:left;
+			}
+			#wrapper{
+				width:633px;
+				height:300px;
+				border:8px solid black;
+				margin:0px auto;
+			}
+			#credits{
+				width:633px;
+				margin: 0 auto;
+				text-align: right;
+			}
+			p{
+				margin-top:10px;
+				font-size:9pt;
+			}
+			h1#header{
+				width:633px;
+				margin:15px auto 5px;
+				font-size:14pt;
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		<h1 id="header">CSS Image Viewer</h1>
+		
+		<div id="wrapper">
+			<ul>
+				<li><a href="#image1" id="tab1"><img src="tab1.jpg" alt="" title="" /></a></li>
+				<li><a href="#image2" id="tab2"><img src="tab2.jpg" alt="" title="" /></a></li>
+				<li><a href="#image3" id="tab3"><img src="tab3.jpg" alt="" title="" /></a></li>
+				<li><a href="#image4" id="tab4"><img src="tab4.jpg" alt="" title="" /></a></li>
+			</ul>
+			<div id="images">
+				<div><a name="image1"></a><img src="image1.jpg" alt="" title="" /></div>
+				<div><a name="image2"></a><img src="image2.jpg" alt="" title="" /></div>
+				<div><a name="image3"></a><img src="image3.jpg" alt="" title="" /></div>
+				<div><a name="image4"></a><img src="image4.jpg" alt="" title="" /></div>
+			</div>
+		</div>
+		<div id="credits">
+			<p>Photography by  <a href="http://www.holmesphoto.com" target="_blank">Adrian Holmes</a>.</p>
+		
+		</div>
+			
+	</body>
+</html>
+
